@@ -27,7 +27,7 @@ ul {
 }
 
 section:before {
-   height: 65px;
+   height: 60px;
    content: "";
    display:block;
 }
