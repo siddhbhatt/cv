@@ -16,7 +16,7 @@
 }
 
 .navbar-brand {
-   font-size: 1.5rem;
+   font-size: 1.3rem;
    font-weight: bold;
 }
 
@@ -32,7 +32,7 @@ ul {
 }
 
 section:before {
-   height: 60px;
+   height: 55px;
    content: "";
    display:block;
 }
