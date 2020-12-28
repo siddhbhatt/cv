@@ -1,8 +1,34 @@
-.cicon {
-   width: 20px;
-   height: 20px; 
+/* Class properties */
+.profile-img {
+   max-width: 100%;
+   height: auto;
 }
+
+.cicon {
+   max-width: 3%;
+   height: auto;
+}
+
 .cred-img {
-    width: 100px;
-    height: 100px; 
- }
+   max-width: 18%;
+   height: auto;
+   padding: 15px 5px;
+}
+
+/* element properties */
+
+
+td {
+   padding: 10px;
+}
+
+ul {
+   line-height: 2;
+}
+
+section:before {
+   height: 65px;
+   content: "";
+   display:block;
+}
+

@@ -1,99 +1,132 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
+    
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Sidd's Personal Site</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
         <link rel="stylesheet" href="css/master.css">
+        <!-- bootstrap js -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     </head>
+    
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        <table cellspacing=25>
-            <tr>
-                <td>
-                    <img src="Sidd_recent.jpg" alt="Sidd's profile picture" width="280" height="200">
-                </td>
-                <td>
-                    <h1>Siddhartha (Sidd) Bhattacharya</h1>
-                    <p>
-                        <em>
-                            Senior Managing Consultant at <strong><a href="https://www.ibm.com/in-en">IBM</a></strong><br>
-                            BTech, Information Technology from <a href="https://www.klyuniv.ac.in/"><strong>Kalyani University</strong></a>
-                        </em>
-                    </p>
-                    <address>
-                        <img class="cicon" src="data:image/png;base64,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">: <a href="mailto:siddhbhatt@gmail.com">siddhbhatt@gmail.com</a><br>
-                        <img class="cicon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAflBMVEUAe7X///8AcbDi6/MAd7N9rM4Ac7G70eStyN/I2ukAebQAdbI5j79Unsjo8vjM4u7Y6fIfiLy00uWew9sHfrZvqs52qc3T5O+ly+FvpMpopcuMudcUg7qny+Hg7/ZDlMKAtNTw9/u92eljoMiTuNWBttWUwNukw9s5k8K61+jZwmoZAAAEoUlEQVR4nO2dbVvbIBSGgTJUSGjStNtsrX1x69b//weXtNMaDVR30YOePfcXP5RcF7e8JhxAyEeqpqynggV12VRPXuLv30mhnM6ds2Rop4pJz9CXxubOVWKsKf3JcCz4FN8JLcaPhmPFrQCPWDU+GnrBU7BVFP5gWHKsokd02RlOTO58XBA1aQ0LrnW0wxZSVCp3Li6KqkTjcmfiorhGMO5nOnQp6tx5uDC1YDLZBgAAAAAAAAAAAAAAAADAf43VRrUYx3SJ1Ro9b8YjX00WhWK4BmnN3fIprkrez/gFHLmd7FGteMU72GO0UY81p3gAa6tXgqwUrXtdgh1zNhEBZjEoKDd3XLqb6bCgZBNdZb6HDCWPQrR2EzRsWBSifggKSs+iO3051verae7cpUBtI4Ylh4aoRhHDrxyGxKjhFw6G5lvEkMW0xiwjhizijd06Yqg5GNoiLLhlMeILNfTqxKgZtpOaeUiQx5RGRAqRSRG2hRhoiXserbDDDdbTikM/+oiZDQhOORkKU25eVlFuG+DctPem7+d82uATRuzuj3qb7Vxx6UX7OHW3ur19KDRTvwNaa2uZNUAAwEfgsLQdoN+pukjKF6vG1radlnPmiOs6MEKlPub6JszDc0X3I5JycVK01hlRr+Y/d8ur9perSbOYlYU1uc7pePu3NnMVSXn9OAlqTcrd2L9K4G8WqzzxAWkNtSqWm2Aiv5tmCBBIaWhNMbzYemJfk894Uxrq5oxfR0N98EpCQ32uAI/4grY5JjO0JvzR7gUz0pqazNBMIj+/YEGpmMpQlW8XlPInoWIywzfX0QMlXVtMZbh6l6CUNdnAmMjw1zta4YExWZBnKsPNOw3lmqqeJjKMRQMMs6F63Uhk+A/siPrTfIYbovXXfIZyTTNBzWhY0VTTjIZyRVKIOQ1p+pqchhXJkJjTkGbqltVwRtEQsxpOKKppVkOS8SKrIUlYWV7D3wQNMa8hxStUckO/XTZNs9zfvyXxkqAhpjWs1nW3R7NbdVJ3X89/P90ShM6lNPRz87zrcKo8V5AUwYEJDV8flK71uc83n6qWDh6UrmJB1pJkR0cyQz8YCGfPfEcliCRPZjgb7vhjUdaSZM9KKsP7UIsy0c9wBHtWUhkuQmO3ji5oEAz5qQzDr3rTzb/8Yz6c4SY8sKnYrpzdpzEchwe2yCZVKb9/GsPInmEX2El97rkPZngdMfwSeY5gQ8DlDXXMkGDqndlwzN7wG/taSnDhSGbDEQxhCEMYwhCGMIQhDGEIQxjCEIYwhCEMYQhDGMIQhjCEIQxhCEMYwhCGMIQhDGEIQxjCEIYwhCEMYQhDGMKwj7kZBfG3z7druV/hlKMf4V129taHn7sh2CYbO0e4vx8tdo5wbBuhjTzH8Px+AAAAAAAAAAAAAAAAAAAAAAAA4ESdOwMXphYl46vfRXcqsWiy3LlLhmsEwVGLOVGVoDjlPB+2kILiZN58mH1rKBn3Nd3p562hF1zrqRX+YDh8DQMDrOouPekMB67S4IAWh1tdDobSl+yK0ZrSy5OhlJNCOT4FqZ0q9n/NxFP0bdWUXOaoddmcbjr5A5XhWJeQSJXvAAAAAElFTkSuQmCC">: <a href="https://www.linkedin.com/in/siddhartha-bhattacharya-6b05264">linkedin.com/in/siddhartha-bhattacharya-6b05264</a><br>
-                        <img class="cicon" src="data:image/png;base64,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">: <a href="https://github.com/siddhbhatt">github.com/siddhbhatt</a><br>
-                        <img class="cicon" src="data:image/png;base64,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">: <a href="https://medium.com/@siddhbhatt">medium.com/@siddhbhatt</a>
-                    </address>
-                </td>
-            </tr>
-        </table>
-        <hr>
-        <h3>Professional Profile</h3>
-        <p>
-            Sidd is a <strong>Data Architect</strong> with 17 years of experience at IBM.  
-            He has been involved in consulting, architecture, design and build of Data Platforms and Cognitive Applications primarily for Banks and Financial Institutions.
-        </p>
-        <h3>Key Client Engagements</h3>
-        <table cellspacing=5>
-            <tr>
-                <td><strong>Barclays:</strong></td>
-                <td>
-                    Review Control Environment Risk Profile Assessment (CERPA) reporting for end-to-end production cycle time and validate data completeness and accuracy to demonstrate BCBS239 standard compliance.
-                </td>
-            </tr>
-            <tr>
-                <td><strong>Northern Trust:</strong></td>
-                <td>Delivery of Enterprise Fabric layer to provide event capture, persistence and choreography services to enable straight-through processing of Trades.<br>
-                    Creation of event driven near real-time DataMart for Transfer Agency business.<br>
-                    API based reporting through Investor Portal.<br>
-                </td>
-            </tr>
-            <tr>
-                <td><strong>TD Bank:</strong></td>
-                <td>
-                    Build and Maintain a dedicated Cloud Business Platform for providing enterprise fraud detection, discovery, and response management services.
-                </td>
-            </tr>
-            <tr>
-                <td><strong>CIBC:</strong></td>
-                <td>
-                    Delivery of a Management Information System for Business Banking Customer Profitability across all portfolios for commercial banking segment.
-                </td>
-            </tr>
-            <tr>
-                <td><strong>Vodafone:</strong></td>
-                <td>
-                    Application Development and Maintenance services for Business Intelligence Domain across portfolio of projects notably NewCo EDW, Retail MIS Replacement, VSight, Network Analytics.
-                </td>
-            </tr>
-            <tr>
-                <td><strong>RICOH:</strong></td>
-                <td>
-                    Build SHARE (Synchronization and Harmony Among Ricoh Europe) Data Warehouse to consolidate analytical reporting across front-office and back-office operations.
-                </td>
-            </tr>
-        </table>
-        <table cellspacing=10>
-            <thead>
-                <tr>
-                    <th><h3>Skills</h3></th>
-                    <th><h3>Credentials</h3></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>
+        <section id="title">
+            <div class="container-fluid">
+                <!-- NAV Bar -->
+                <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+                    <a class="navbar-brand" href="#title"><h3>Siddhartha (Sidd) Bhattacharya</h3></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto" style="font-size: small;">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#profession-profile">Professional Profile</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#client-engagement">Key Client Engagements</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#skills-credentials">Skills & Credentials</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#organizational-activities">Organizational Activites</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#achivements">Achivements</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            
+                <!-- Profile -->
+                <div class="row">
+                    <div class="col-lg-3 col-md-4">
+                        <img class="profile-img" src="images/Sidd_recent.jpg">
+                    </div>
+                    <div class="col-md-6" style="padding: 2%;">
+                        
+                        <p>
+                            <em style="line-height: 2;">
+                                Senior Managing Consultant at <strong><a href="https://www.ibm.com/in-en">IBM</a></strong><br>
+                                BTech, Information Technology from <a href="https://www.klyuniv.ac.in/"><strong>Kalyani University</strong></a>
+                            </em>
+                        </p>
+                        <address>
+                            <img class="cicon" src="data:image/png;base64,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">: <a href="mailto:siddhbhatt@gmail.com">siddhbhatt@gmail.com</a><br>
+                            <img class="cicon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAflBMVEUAe7X///8AcbDi6/MAd7N9rM4Ac7G70eStyN/I2ukAebQAdbI5j79Unsjo8vjM4u7Y6fIfiLy00uWew9sHfrZvqs52qc3T5O+ly+FvpMpopcuMudcUg7qny+Hg7/ZDlMKAtNTw9/u92eljoMiTuNWBttWUwNukw9s5k8K61+jZwmoZAAAEoUlEQVR4nO2dbVvbIBSGgTJUSGjStNtsrX1x69b//weXtNMaDVR30YOePfcXP5RcF7e8JhxAyEeqpqynggV12VRPXuLv30mhnM6ds2Rop4pJz9CXxubOVWKsKf3JcCz4FN8JLcaPhmPFrQCPWDU+GnrBU7BVFP5gWHKsokd02RlOTO58XBA1aQ0LrnW0wxZSVCp3Li6KqkTjcmfiorhGMO5nOnQp6tx5uDC1YDLZBgAAAAAAAAAAAAAAAADAf43VRrUYx3SJ1Ro9b8YjX00WhWK4BmnN3fIprkrez/gFHLmd7FGteMU72GO0UY81p3gAa6tXgqwUrXtdgh1zNhEBZjEoKDd3XLqb6bCgZBNdZb6HDCWPQrR2EzRsWBSifggKSs+iO3051verae7cpUBtI4Ylh4aoRhHDrxyGxKjhFw6G5lvEkMW0xiwjhizijd06Yqg5GNoiLLhlMeILNfTqxKgZtpOaeUiQx5RGRAqRSRG2hRhoiXserbDDDdbTikM/+oiZDQhOORkKU25eVlFuG+DctPem7+d82uATRuzuj3qb7Vxx6UX7OHW3ur19KDRTvwNaa2uZNUAAwEfgsLQdoN+pukjKF6vG1radlnPmiOs6MEKlPub6JszDc0X3I5JycVK01hlRr+Y/d8ur9perSbOYlYU1uc7pePu3NnMVSXn9OAlqTcrd2L9K4G8WqzzxAWkNtSqWm2Aiv5tmCBBIaWhNMbzYemJfk894Uxrq5oxfR0N98EpCQ32uAI/4grY5JjO0JvzR7gUz0pqazNBMIj+/YEGpmMpQlW8XlPInoWIywzfX0QMlXVtMZbh6l6CUNdnAmMjw1zta4YExWZBnKsPNOw3lmqqeJjKMRQMMs6F63Uhk+A/siPrTfIYbovXXfIZyTTNBzWhY0VTTjIZyRVKIOQ1p+pqchhXJkJjTkGbqltVwRtEQsxpOKKppVkOS8SKrIUlYWV7D3wQNMa8hxStUckO/XTZNs9zfvyXxkqAhpjWs1nW3R7NbdVJ3X89/P90ShM6lNPRz87zrcKo8V5AUwYEJDV8flK71uc83n6qWDh6UrmJB1pJkR0cyQz8YCGfPfEcliCRPZjgb7vhjUdaSZM9KKsP7UIsy0c9wBHtWUhkuQmO3ji5oEAz5qQzDr3rTzb/8Yz6c4SY8sKnYrpzdpzEchwe2yCZVKb9/GsPInmEX2El97rkPZngdMfwSeY5gQ8DlDXXMkGDqndlwzN7wG/taSnDhSGbDEQxhCEMYwhCGMIQhDGEIQxjCEIYwhCEMYQhDGMIQhjCEIQxhCEMYwhCGMIQhDGEIQxjCEIYwhCEMYQhDGMKwj7kZBfG3z7druV/hlKMf4V129taHn7sh2CYbO0e4vx8tdo5wbBuhjTzH8Px+AAAAAAAAAAAAAAAAAAAAAAAA4ESdOwMXphYl46vfRXcqsWiy3LlLhmsEwVGLOVGVoDjlPB+2kILiZN58mH1rKBn3Nd3p562hF1zrqRX+YDh8DQMDrOouPekMB67S4IAWh1tdDobSl+yK0ZrSy5OhlJNCOT4FqZ0q9n/NxFP0bdWUXOaoddmcbjr5A5XhWJeQSJXvAAAAAElFTkSuQmCC">: <a href="https://www.linkedin.com/in/siddhartha-bhattacharya-6b05264">linkedin.com/in/siddhartha-bhattacharya-6b05264</a><br>
+                            <img class="cicon" src="data:image/png;base64,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">: <a href="https://github.com/siddhbhatt">github.com/siddhbhatt</a><br>
+                            <img class="cicon" src="data:image/png;base64,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">: <a href="https://medium.com/@siddhbhatt">medium.com/@siddhbhatt</a>    
+                        </address>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="profession-profile">
+            <div class="container-fluid">
+                <hr>
+                <h3>Professional Profile</h3>
+                <p>
+                    Sidd is a <strong>Data Architect</strong> with 17 years of experience at IBM.  
+                    He has been involved in consulting, architecture, design and build of Data Platforms and Cognitive Applications primarily for Banks and other Financial Institutions.
+                </p>
+            </div>
+        </section>
+
+        <section id="client-engagement">
+            <div class="container-fluid">
+                <h3>Key Client Engagements</h3>
+                <table>
+                    <tr>
+                        <td><h6>Barclays</h6></td>
+                        <td>
+                            Review Control Environment Risk Profile Assessment (CERPA) reporting for end-to-end production cycle time and validate data completeness and accuracy to demonstrate BCBS239 standard compliance.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><h6>Northern Trust:</h6></td>
+                        <td>Delivery of Enterprise Fabric layer to provide event capture, persistence and choreography services to enable straight-through processing of Trades.<br>
+                            Creation of event driven near real-time DataMart for Transfer Agency business.<br>
+                            API based reporting through Investor Portal.<br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><h6>TD Bank:</h6></td>
+                        <td>
+                            Build and Maintain a dedicated Cloud Business Platform for providing enterprise fraud detection, discovery, and response management services.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><h6>CIBC:</h6></td>
+                        <td>
+                            Delivery of a Management Information System for Business Banking Customer Profitability across all portfolios for commercial banking segment.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><h6>Vodafone:</h6></td>
+                        <td>
+                            Application Development and Maintenance services for Business Intelligence Domain across portfolio of projects notably NewCo EDW, Retail MIS Replacement, VSight, Network Analytics.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><h6>RICOH:</h6></td>
+                        <td>
+                            Build SHARE (Synchronization and Harmony Among Ricoh Europe) Data Warehouse to consolidate analytical reporting across front-office and back-office operations.
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <section id="skills-credentials">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>Skills</h3>
                         <ul>
                             <li>Information and Application Architecture</li>
                             <li>Modernization of Data Platforms and Data Pipelines</li>
@@ -103,50 +136,61 @@
                             <li>Data Migration</li>
                             <li>Containerization and DevOps</li>
                         </ul>
-                    </td>
-                    <td>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Credentials</h3>
                         <a href="https://www.youracclaim.com/badges/b1e90a5e-74e5-452d-b66a-6aa0e1b27e6b/public_url"><img class="cred-img" src="https://images.youracclaim.com/size/340x340/images/602716ab-3604-4143-a049-1fdfe8cf1721/Architectural-Thinking-badge.png"></a>
                         <a href="https://www.youracclaim.com/badges/0a89f7db-46c2-48c5-ac54-615e48fc4eac/public_url"><img class="cred-img" src="https://images.youracclaim.com/size/340x340/images/bc08972c-3c7d-4b99-82a0-c94bcca36674/Badges_v8-07_Practitioner.png"></a>
                         <a href="https://www.youracclaim.com/badges/d54e5168-4777-4d5b-bd3e-731594850b86/public_url"><img class="cred-img" src="https://images.youracclaim.com/size/340x340/images/fb5ab6c0-c422-4c02-b0af-07a082fa13d5/Digital_Insights_Badge_Delivery.png"></a>
                         <a href="https://www.youracclaim.com/badges/d54e5168-4777-4d5b-bd3e-731594850b86/public_url"><img class="cred-img" src="https://images.youracclaim.com/size/340x340/images/28d68d08-7a26-4868-be2e-7bf32eeab4f8/Deep_Learning_Using_TensorFlow.png"></a>
                         <a href="https://www.youracclaim.com/badges/73624150-85e4-4d03-a329-c5da1bf2516f/public_url"><img class="cred-img" src="https://images.youracclaim.com/size/340x340/images/53caf8cc-b5e9-4424-b4a7-7b069fa13db4/Machine_Learning_with_Python.png"></a>
-                        <br>
                         <a href="https://www.youracclaim.com/badges/f4e3b39f-babc-487e-8961-8ff7aea43fd3/public_url"><img class="cred-img" src="https://images.youracclaim.com/size/340x340/images/1d0771e1-ef2e-47cf-a122-c103be0605aa/Analytics_for_Apach_Spark_on_Cloud_Spark_ML_Streaming_V2.0.x.png"></a>
                         <a href="https://www.youracclaim.com/badges/3b9bb377-27ac-47dc-a75c-784a0fe72a2c/public_url"><img class="cred-img" src="https://images.youracclaim.com/size/110x110/images/4e5341a0-031a-477d-a3c6-7a641e79dc2c/Hadoop_Data_Found_Level_1_-_CC_-_2019.png"></a>
                         <a href="https://www.youracclaim.com/badges/1c37df30-531b-42e5-b111-d28a03f8e9ff/public_url"><img class="cred-img" src="https://images.youracclaim.com/size/110x110/images/cef56b02-49c4-43c8-9913-733569bd39cc/IBM-Mentor__282_29.png"></a>
                         <a href="https://www.youracclaim.com/badges/d1deae7e-8f37-4467-96ad-9ba4ed0f5e22/public_url"><img class="cred-img" src="https://images.youracclaim.com/size/110x110/images/12da05ff-0adb-4cf4-b1f2-3fcf15ef5188/Educator.png"></a>
                         <a href="https://www.youracclaim.com/badges/75538d8b-b027-41bf-8ade-3af1b4c8d1d9/public_url"><img class="cred-img" src="https://images.youracclaim.com/size/110x110/images/aad8d8bc-1cdf-4e79-b1e0-1595aeab251b/Speaker-presenter.png"></a>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <h3>Organizational Initiatives</h3>
-        <p>
-            <ul>
-                <li>Develop Offering to build/manage ChatBots without code aided by AdminBot</li>
-                <li>Build Machine Learning enabled prototype for Co-Insights – an IBM PoV for industries like Insurance and Travel & Transportation to deal with Covid-19 crisis</li>
-                <li>Present data-as-a-service solutions to Financial Services customers in North Americas and Nordics Roadshows</li>
-                <li>Lead Financial Services Data Transformation objective to create Big/Fast Data client demos and Training path for practitioners including case studies in live environments</li>
-                <li>Lead CallForCode (disaster management solutions) for CIC Financial Services teams for ideation and implementation</li>
-                <li>Ideate and Build solutions for BlueStorm </li>
-                <li>Build 4 instances of IBM Customer Analytics Database for North Americas, Europe, Asia Pacific and Global</li>
-            </ul>
-        </p>
-        <h3>Achievements</h3>
-        <p>
-            <ul>
-                <li>Felicitated as 'Best of IBM'</li>
-                <li>Excellence and Eminence Best Architect award within Financial Services Sector</li>
-                <li>Excellence and Eminence Star award for contribution to Financial Services BAS Practice</li>
-                <li>Excellence and Eminence Star award in Solutioning</li>
-                <li>Disclosure and prototype for ‘Real-time LPG monitoring and leakage detection solution’ using Internet of Things and Mobility</li>
-                <li>Winner of IBM IdeasJam</li>
-                <li>Multiple open source contributions in PyPI</li>
-                <li>Multiple asset contributions to IBM Lighthouse</li>
-                <li>Nominated for Economic Times Young Leaders</li>
-                <li>Multiple Bravo and Customer Satisfaction awards for Delivery</li>
-            </ul>
-        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="organizational-activities">
+            <div class="container-fluid">
+                <h3>Organizational Activities</h3>
+            <p>
+                <ul>
+                    <li>Develop technical solutions and conduct due diligence and proof of concepts during presales cycle</li>
+                    <li>Build Machine Learning enabled prototype for Co-Insights – an IBM PoV for industries like Insurance and Travel & Transportation to deal with Covid-19 crisis</li>
+                    <li>Present data-as-a-service solutions to Financial Services customers in North Americas and Nordics Roadshows</li>
+                    <li>Lead Financial Services Data Transformation objective to create Big/Fast Data client demos and Training path for practitioners including case studies in live environments</li>
+                    <li>Build 4 instances of IBM Customer Analytics Database for North Americas, Europe, Asia Pacific and Global</li>
+                    <li>Lead CallForCode (disaster management solutions) for CIC Financial Services teams for ideation and implementation</li>
+                    <li>Ideate and Build solutions for BlueStorm </li>
+                </ul>
+            </p>
+            </div>
+        </section>
+
+        <section id="achivements">
+            <div class="container-fluid">
+                <h3>Achievements</h3>
+                <p>
+                    <ul>
+                        <li>Felicitated as 'Best of IBM'</li>
+                        <li>Excellence and Eminence Best Architect award within Financial Services Sector</li>
+                        <li>Excellence and Eminence Star award for contribution to Financial Services BAS Practice</li>
+                        <li>Excellence and Eminence Star award in Solutioning</li>
+                        <li>Disclosure and prototype for ‘Real-time LPG monitoring and leakage detection solution’ using Internet of Things and Mobility</li>
+                        <li>Winner of IBM IdeasJam</li>
+                        <li>Multiple open source contributions in PyPI</li>
+                        <li>Multiple asset contributions to IBM Lighthouse</li>
+                        <li>Nominated for Economic Times Young Leaders</li>
+                        <li>Multiple Bravo and Customer Satisfaction awards for Delivery</li>
+                    </ul>
+                </p>
+            </div>
+        </section>
+
         <script src="" async defer></script>
     </body>
 </html>
