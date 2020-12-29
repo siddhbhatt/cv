@@ -36,6 +36,13 @@
    font-weight: bold;
 }
 
+/* media query */
+@media (min-width: 770px) {
+   .cred-text {
+      text-align: center;
+   }
+}
+
 /* element properties */
 
 
