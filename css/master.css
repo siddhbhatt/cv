@@ -15,9 +15,17 @@
    padding: 25px 25px 25px;
 }
 
+.cred-img:hover {
+   background-color: rgb(36, 92, 36);
+}
+
 .cred-img1 {
    width: 35%;
    padding: 25px 25px 25px;
+}
+
+.cred-img1:hover {
+   background-color: rgb(36, 92, 36);
 }
 
 .navbar-brand {
