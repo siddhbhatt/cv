@@ -5,8 +5,8 @@
 }
 
 .cicon {
-   max-width: 3%;
-   height: auto;
+   width: 3%;
+   /* height: auto; */
 }
 
 .cred-img {
